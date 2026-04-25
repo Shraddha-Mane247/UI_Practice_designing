@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marquee Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&family=Sekuya&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .box {
+        width: 100%;
+        min-height: 60px;
+        margin: auto;
+        margin-top: 200px;
+      }
+      body {
+        background-image: url(./imgs/Cartoon-RoadTree-Background.jpg);
+        background-position: center;
+
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-family: "Sekuya", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color: darkolivegreen;
+      }
+      p {
+        text-align: left;
+        color: white;
+        display: inline-block;
+        font-size: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        font-family: "Sekuya", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        background-color: darkolivegreen;
+      }
+      .box img {
+        width: 420px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Welcome to the Dino World</h1>
+    <p>Developed by - Shraddha</p>
+    <div class="box" id="d1">
+      <marquee
+        direction="left"
+        scrollamount="20"
+        onmouseover="this.stop()"
+        onmouseover="Audio"
+        onmouseleave="this.start()"
+      >
+        <img
+          src="./imgs/dino-removebg-preview.png"
+          alt="Dinosor running image"
+        />
+      </marquee>
+    </div>
+  </body>
+</html>
