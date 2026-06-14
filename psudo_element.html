@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psudo Element</title>
+    <style>
+      :root {
+        --paddingAll: 20px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        width: 60%;
+        min-height: 100px;
+        border: 1px solid lightgray;
+        margin: auto;
+        background-color: cornsilk;
+      }
+
+      .container {
+        text-align: justify;
+        padding: var(--paddingAll);
+        margin-top: 20px;
+      }
+
+      .container h2::before {
+        content: "😊";
+      }
+      .container h2::after {
+        content: "World";
+      }
+
+      .container p::first-letter {
+        font-size: 30px;
+        font-weight: 500;
+        color: tomato;
+      }
+
+      .container p::first-line {
+        color: blue;
+      }
+      /* this is universal selection .. by using this if we select any text then the text background selection color will change. */
+      /* ::selection {
+        background-color: rgb(235, 149, 235);
+      } */
+      .container ::selection {
+        background-color: rgb(246, 170, 170);
+      }
+
+      h1 {
+        margin-top: 30px;
+        color: green;
+      }
+
+      .pass {
+        padding: 10px;
+      }
+      input[type="text"] {
+        padding: 10px;
+      }
+      input[type="text"]::placeholder {
+        color: red;
+        text-align: center;
+      }
+      li::marker {
+        color: rgb(212, 67, 225);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>"Welcome To CSS"</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus ad
+        aspernatur corrupti consequatur. Voluptate, fugit eaque recusandae natus
+        vitae repellendus!
+      </p>
+      <br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eveniet,
+        fuga voluptatum fugiat voluptatibus consequuntur a quisquam pariatur
+        ipsam doloremque.
+      </p>
+      <form>
+        <h1>Wokring on the Psudo element input type</h1>
+        <input type="text" placeholder="Enter password" />
+        <br />
+        <br />
+        <ul>
+          <li>"Python"</li>
+          <li>"Java"</li>
+          <li>"HTML"</li>
+          <li>"CSS"</li>
+          <li>"javascript"</li>
+        </ul>
+        <div class="pass"></div>
+      </form>
+    </div>
+  </body>
+</html>
