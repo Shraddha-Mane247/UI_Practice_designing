@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  min-height: 500px;
+  border: 1px solid #000;
+  margin: auto;
+  margin-top: 10px;
+}
+.btn {
+  margin: auto;
+  padding: 10;
+  width: 120px;
+  justify-self: center;
+  height: 35px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font: 20px;
+  margin-top: 30px;
+  margin-left: 130px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.b1 {
+  margin: auto;
+  padding: 10;
+  width: 120px;
+  justify-self: center;
+  height: 35px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  font: 20px;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding-left: 25px;
+  padding-right: 30px;
+  background-color: rgb(66, 215, 153);
+}
+.signin {
+  width: 40%;
+  float: left;
+  min-height: 480px;
+  border: 1px solid #000;
+  background-color: rgb(66, 215, 153);
+  padding-top: 180px;
+}
+.acc {
+  width: 60%;
+  float: right;
+  min-height: 480px;
+  border: 1px solid #000;
+  padding-top: 90px;
+  color: rgb(44, 181, 124);
+  padding-left: 200px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+p {
+  text-align: center;
+  padding: 30px;
+  padding-top: 20px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  float: left;
+  margin-left: 30px;
+}
+
+.info {
+  display: block;
+}
+.t1 {
+  width: 190px;
+  height: 25px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+.t2 {
+  width: 190px;
+  height: 25px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+.t3 {
+  width: 190px;
+  height: 25px;
+  margin-right: 40px;
+  margin-top: 10px;
+}
+.p1 {
+  padding-top: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 20px;
+  font-size: xx-large;
+}
+#il {
+  margin-top: 20px;
+  margin-right: 100px;
+}

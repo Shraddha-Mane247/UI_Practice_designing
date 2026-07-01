@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+h1 {
+  text-align: center;
+}
+.Container {
+  width: 80%;
+  min-height: 500px;
+  padding: 10px;
+  margin: auto;
+  text-align: justify;
+  border: 1px solid #000;
+  background-color: rgb(160, 111, 206);
+}
+.box {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #b4b2b2;
+}
+
+.country {
+  color: #000;
+}
+table th,
+td {
+  border: 1px solid #b4b2b2;
+}
+table {
+  margin: auto;
+}
+table tr,
+th,
+td {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 5px;
+}
+.btn {
+  margin: auto;
+  padding: 10;
+  width: 90px;
+  justify-self: center;
+  height: 35px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+h1 {
+  color: white;
+}
+.butt {
+  margin-left: 200px;
+  margin-top: 10px;
+}
