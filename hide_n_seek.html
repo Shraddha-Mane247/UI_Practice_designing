@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hide & Seek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Playwrite+NZ+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 1420px;
+        height: 600px;
+        background: linear-gradient(
+          to bottom,
+          rgb(72, 198, 232),
+          white,
+          rgb(48, 116, 48)
+        );
+        background-repeat: no-repeat;
+      }
+      .box {
+        width: 900px;
+        min-height: 530px;
+        border: 2px solid #000;
+        position: relative;
+        top: 10px;
+        left: 190px;
+        background-image: url("./imgs/grassbg.png");
+        background-size: 100% 100%;
+      }
+
+      .child {
+        width: 170px;
+        height: 200px;
+        position: absolute;
+        bottom: 0;
+        animation: hop 4s linear infinite;
+      }
+      .child img {
+        width: 100%;
+        height: 100%;
+      }
+      h1 {
+        text-align: center;
+        margin: 10px;
+        font-weight: 100;
+        font-family: "Jersey 10 Charted", sans-serif;
+        font-size: 50px;
+        color: rgb(100, 27, 27);
+      }
+      p {
+        padding: 10px;
+        font-size: large;
+        font-family: "Sekuya", system-ui;
+        color: rgb(100, 27, 27);
+      }
+      @keyframes hop {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        20% {
+          transform: translate(180px, -40px);
+        }
+
+        40% {
+          transform: translate(360px, 0);
+        }
+
+        60% {
+          transform: translate(540px, -40px);
+        }
+
+        100% {
+          transform: translate(750px, 0);
+        }
+      }
+
+      /* //hide */
+      .child:hover {
+        opacity: 0;
+        transition: 0.1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Developed by Shraddha</p>
+      <div class="box">
+        <h1>Hide & Seek</h1>
+        <div
+          class="child"
+          onmouseenter="
+            let a = document.getElementById('oops');
+            a.currentTime = 0;
+            a.play();
+          "
+        >
+          <img src="./imgs/rabbit.png" alt="" />
+        </div>
+
+        <audio id="oops">
+          <source src="./audio/oopsie-female.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
