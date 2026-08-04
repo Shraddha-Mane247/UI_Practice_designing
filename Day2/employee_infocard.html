@@ -1,0 +1,99 @@
+<!-- Problem Statement
+Create a web page showing information for three employees.
+Each card should contain:
+•	Employee Name 
+•	Employee ID 
+•	Department 
+•	Salary 
+Arrange the cards horizontally using the display property.
+Apply different background colors and font sizes to different sections.
+CSS Selector Suggestions
+•	Class Selector (.card) 
+•	ID Selector (#header) 
+•	Group Selector (h2, p) 
+•	Child Selector (.card > p) -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 100%;
+        height: 400px;
+        overflow: auto;
+        margin: auto;
+        margin: 10px;
+        border: 1px solid #000;
+      }
+      .card {
+        width: 30%;
+        height: 300px;
+        border: 1px solid #000;
+        display: inline-block;
+
+        margin: 10px;
+        padding: 20px;
+        text-align: justify;
+      }
+      #header {
+        font-size: 40px;
+        color: red;
+        text-align: center;
+      }
+      /* //group selecttor */
+      h2,
+      p {
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+
+      /* //child selector */
+      .card > p {
+        color: darkgreen;
+        font-size: 18px;
+      }
+
+      .card:nth-child(2) {
+        background-color: powderblue;
+      }
+      .card:nth-child(3) {
+        background-color: lightgreen;
+      }
+      .card:last-child {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1 id="header">Employee Information</h1>
+      <div class="card">
+        <h2>Name:Shraddha Mane</h2>
+        <p>Id: 101</p>
+        <p>Dept: IT</p>
+        <p>Sal:120000</p>
+      </div>
+      <div class="card">
+        <h2>Name:Karuna Mane</h2>
+        <p>Id: 102</p>
+        <p>Dept: Finance</p>
+        <p>Sal:82000</p>
+      </div>
+      <div class="card">
+        <h2>Name:Monika Mane</h2>
+        <p>Id: 103</p>
+        <p>Dept: HR</p>
+        <p>Sal:75000</p>
+      </div>
+    </div>
+  </body>
+</html>
