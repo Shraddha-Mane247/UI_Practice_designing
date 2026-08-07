@@ -1,0 +1,85 @@
+<!-- Assignment 2: Product Display Boxes (Display Property)
+Problem Statement
+Create a web page showing three product boxes. Each box should contain:
+•	Product Name 
+•	Product Price 
+•	Product Description 
+Arrange all three boxes in a single row using the display property.
+CSS Selector Suggestions
+•	Class Selector (.product) 
+•	Element Selector (h2, p) 
+•	Universal Selector (*) for common styling  -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Boxes</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80%;
+        min-height: 400px;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 20px;
+        padding: 5px;
+        padding-left: 15px;
+      }
+      .box {
+        width: 22%;
+        height: 300px;
+        border: 1px solid red;
+        display: inline-block;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>Product Name: Pen</p>
+        <p>Product Price: 10 Rs.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          vero a quasi neque numquam totam aliquam, dolor laudantium sequi?
+          Culpa?
+        </p>
+      </div>
+      <div class="box">
+        <p>Product Name: Pen</p>
+        <p>Product Price: 10 Rs.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          vero a quasi neque numquam totam aliquam, dolor laudantium sequi?
+          Culpa?
+        </p>
+      </div>
+      <div class="box">
+        <p>Product Name: Notebook</p>
+        <p>Product Price: 90 Rs.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          vero a quasi neque numquam totam aliquam, dolor laudantium sequi?
+          Culpa?
+        </p>
+      </div>
+      <div class="box">
+        <p>Product Name: Water Bottle</p>
+        <p>Product Price: 150 Rs.</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+          vero a quasi neque numquam totam aliquam, dolor laudantium sequi?
+          Culpa?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!-- Assignment 1: Student Profile Page (Background Color & Font Size)
+Problem Statement
+Create a web page that displays a student's profile containing:
+•	Student Name (Heading) 
+•	Course Name 
+•	College Name 
+•	Short Introduction 
+Apply:
+•	Different background colors to the page and heading. 
+•	Different font sizes for the heading and paragraph. 
+CSS Selector Suggestions
+•	Element Selector (body, h1, p) 
+•	ID Selector (#profile) 
+•	Class Selector (.info)  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 60%;
+        min-height: 300px;
+        border: 1px solid black;
+        margin: auto;
+        background-color: antiquewhite;
+        margin-top: 20px;
+      }
+      .header {
+        text-align: justify;
+        color: rgb(171, 11, 0);
+        padding: 20px;
+      }
+      .intro p {
+        font-size: 20px;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-weight: 100;
+        color: rgb(74, 11, 134);
+        padding: 20px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="header">
+        <h1>Name: Shraddha Mane</h1>
+        <h2>Course Name: Conputer Science and Engineering</h2>
+        <h2>
+          College Name: N. K. Orchid College of Engineering and Technology ,
+          Solapur
+        </h2>
+        <hr />
+        <br />
+        <div class="intro">
+          <p>This is Shraddha Mane!</p>
+          <p>
+            I have recently completed B.Tech in Computer Science and Engineering
+            from N. K. Orchid College of Engineering and Technology . I have
+            Completed my Diploma from government Polytechnic ,Solapur. I have
+            Strong knowlegde in Java Programing, Linux, Git, GitHub, SQL etc. I
+            have developed different projects during my college . I have
+            Published Utility Petent under IPR. I am very Sxicited to to begin
+            my professional Journey and apply what i have larned in the real
+            world envirnment.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
